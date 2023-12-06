@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plus-Linux 1.0</title>
+</head>
+<body>
+    <h1>Plus-Linux 1.0</h1>
+
+    <blockquote>
+        <p>Plus Linux is based on Kernel 5.15.127 (LTS) at a small size.</p>
+        <p>It also uses Busybox instead of GNU. I may create my own coreutils in C later to make it even smaller and with less bloat.</p>
+    </blockquote>
+
+    <h2>What it offers:</h2>
+    <ol>
+        <li>Main:
+            <ul>
+                <li>Plus Linux is based on Kernel 5.15.127.</li>
+                <li>It uses Busybox as the system utilities.</li>
+                <li>It is completely GNU and Systemd free.</li>
+            </ul>
+        </li>
+        <li>Goals:
+            <ul>
+                <li>To fit on a single floppy drive (1.44Mb).</li>
+                <li>To have less bloat than other distros like Ubuntu.</li>
+                <li>To aim for stability.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Features:</h2>
+    <ul>
+        <li>Plus Linux is so bare bones that you cannot move files with <code>mv</code>. To save space, you can use <code>cp</code> and <code>rm</code> for this purpose.</li>
+        <li>It can run on various machines, even older ones. Try running it on your 23-year-old IBM NetVista from the year 2000 ;)</li>
+        <li>Dark mode is enabled by default!</li>
+        <li>Manage your computer when you've messed something up. Mount and unmount drivers or delete your friend's nice images they downloaded from 4chan!</li>
+        <li>Expandable! Get a second floppy and add something small like suckless software, which is only a few kilobytes in size! With that, you have a full Linux system on two floppy disks supporting graphics and web browsing!</li>
+    </ul>
+
+    <h2>A screenshot of Plus Linux</h2>
+    <img src="https://github.com/plastic-bottleneck/Plus-Linux/blob/main/src/Plus-Linux.png" alt="Plus-Linux-Screenshot">
+
+    <h2>How to run it in a VM</h2>
+    <p>You can run it using QEMU:</p>
+    <pre>
+        qemu-system-i386 -fda plus.img
+    </pre>
+
+    <footer>
+        <blockquote>
+            <p>Made by Paul, also known as Plastic Bottleneck. GitHub: <a href="https://github.com/plastic-bottleneck">https://github.com/plastic-bottleneck</a></p>
+            <p>Check out my custom BASH config: <a href="https://github.com/plastic-bottleneck/bashrc">https://github.com/plastic-bottleneck/bashrc</a></p>
+        </blockquote>
+    </footer>
+</body>
+</html>
