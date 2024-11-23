@@ -1,47 +1,108 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<title>&#127790; Plastic Bottleneck</title>
-	</head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌲 Gallery</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, nav, footer {
+            text-align: center;
+            padding: 20px;
+        }
+        header pre {
+            white-space: pre-wrap;
+            font-size: 1.2rem;
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+            border-bottom: 2px solid #ffffff;
+            padding-bottom: 10px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        .gallery-item {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <pre>
+   _|_|_|            _|  _|
+ _|          _|_|_|  _|  _|    _|_|    _|  _|_|  _|    _|
+ _|  _|_|  _|    _|  _|  _|  _|_|_|_|  _|_|      _|    _|
+ _|    _|  _|    _|  _|  _|  _|        _|        _|    _|
+   _|_|_|    _|_|_|  _|  _|    _|_|_|  _|          _|_|_|
+                                                       _|
+                                                   _|_|
+        </pre>
+    </header>
 
-	<body bgcolor="#000000">
-		<font color="#ffffff">
+    <nav>
+        <a href="/">Home</a>
+        <a href="https://github.com/plastic-bottleneck">GitHub</a>
+        <a href="https://suckless.org">Suckless</a>
+        <a href="https://harmful.cat-v.org/">Harmful</a>
+        <a href="https://openbsd.org/">OpenBSD</a>
+        <a href="http://9front.org">9front</a>
+        <a href="/plus-linux">PlusLinux</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/setup">Setup</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </nav>
 
-			<center>
-				<pre>
-                                                           
-   _|_|_|            _|  _|                                
- _|          _|_|_|  _|  _|    _|_|    _|  _|_|  _|    _|  
- _|  _|_|  _|    _|  _|  _|  _|_|_|_|  _|_|      _|    _|  
- _|    _|  _|    _|  _|  _|  _|        _|        _|    _|  
-   _|_|_|    _|_|_|  _|  _|    _|_|_|  _|          _|_|_|  
-                                                       _|  
-                                                   _|_|    
+    <div class="gallery">
+        <div class="gallery-item">
+            <h3>)( Plus Linux</h3>
+            <img src="/gallery/Plus-Linux.png" alt="Plus Linux">
+            <pre>Starting with the first Image of Plus Linux Version 1.0<br>19th August, 2023</pre>
+        </div>
 
-				</pre>
-				<p >Welcome to my gallery!</p>
-				<p><a href="/" style="text-decoration:none";>Home</a> | <a href="https://github.com/plastic-bottleneck" style="text-decoration:none";>GitHub</a> | <a href="https://suckless.org" style="text-decoration:none";>Suckless</a> | <a href="https://harmful.cat-v.org/" style="text-decoration:none";>Harmful</a> | <a href="https://openbsd.org/" style="text-decoration:none";>OpenBSD</a> | <a href="http://9front.org" style="text-decoration:none";>9front</a> | <a href="/plus-linux" style="text-decoration:none";>PlusLinux</a> | <a href="/gallery" style="text-decoration:none";>Gallery</a> | <a href="/setup" style="text-decoration:none";>Setup</a> | <a href="/projects" style="text-decoration:none";>Projects</a> | <a href="/contact" style="text-decoration:none";>Contact</a>	
-				<h3>)( Plus Linux</h3>
-				<img src="/gallery/Plus-Linux.png" alt="Plus Linux" style="width:720px;height:480px;">
-				<pre>
-Starting with the first Image of Plus Linux Version 1.0
-19th August, 2023
-				</pre>
-				
-				<h3>)( Rack</h3>
-				<img src="/gallery/IMG_20240228_212427_742.jpg" alt="Server" style="width:480px;height:720px;">
-				<pre>
-This is my server rack filled with some servers.
-I use it for networking and more!
-28th February, 2024
-				</pre>
-				
-				<p>&nbsp;</p>
+        <div class="gallery-item">
+            <h3>)( Rack</h3>
+            <img src="/gallery/IMG_20240228_212427_742.jpg" alt="Server Rack">
+            <pre>This is my server rack filled with some servers.<br>I use it for networking and more!<br>28th February, 2024</pre>
+        </div>
+    </div>
 
-				<pre>2023-2024 -/- Plastic Bottleneck</pre>
-				<p>&nbsp;</p>
-			</center>
-		</font>
-	</body>
+    <div class="footer">
+        ୨⎯ 2023-2024 (c) Plastic Bottleneck ⎯୧ <br>
+        ...This site is POSIX-compliant...
+    </div>
+</body>
 </html>

@@ -1,66 +1,125 @@
 <!DOCTYPE html>
-<html>
-    <head>
-		<meta charset="UTF-8">
-		<title>&#127790; Plastic Bottleneck</title>
-	</head>
-
-	<body bgcolor="#000000">
-		<font color="#ffffff">
-
-			<center>
-				<pre>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌲 Projects</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        pre {
+            white-space: pre-wrap;
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ffffff;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h2, h3 {
+            text-align: center;
+            margin: 30px 0 10px;
+        }
+        p, pre {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .project-list {
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: left;
+            border: 1px solid #ffffff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <pre>
 ____________________________________________________
-    ____                                            
-    /    )                   ,                      
+    ____
+    /    )                   ,
 ---/____/---)__----__------------__----__--_/_---__-
   /        /   ) /   )     /   /___) /   ' /    (_ `
 _/________/_____(___/_____/___(___ _(___ _(_ __(__)_
-                         /                          
-                     (_ /                           
-        			</pre>
-				<p>Welcome to my webpage!</p>
-				<p><a href="/" style="text-decoration:none";>Home</a> | <a href="https://github.com/plastic-bottleneck" style="text-decoration:none";>GitHub</a> | <a href="https://suckless.org" style="text-decoration:none";>Suckless</a> | <a href="https://harmful.cat-v.org/" style="text-decoration:none";>Harmful</a> | <a href="https://openbsd.org/" style="text-decoration:none";>OpenBSD</a> | <a href="http://9front.org" style="text-decoration:none";>9front</a> | <a href="/plus-linux" style="text-decoration:none";>PlusLinux</a> | <a href="/gallery" style="text-decoration:none";>Gallery</a> | <a href="/setup" style="text-decoration:none";>Setup</a> | <a href="/projects" style="text-decoration:none";>Projects</a> | <a href="/contact" style="text-decoration:none";>Contact</a>	
-				<h2> //Projects</h2>
+                         /
+                     (_ /
+    </pre>
 
-				<h3> )( Plus Linux 1.0</h3>
-					<pre>
-Plus Linux is a free GNU/Linux distro designed to fit on a floppy disc! 
-It is built to be quite small yet functional for experimentation. Currently, 
-it is based on the LTS version of Linux 1.15.127.
-					</pre>
+    <nav>
+        <a href="/">Home</a>
+        <a href="https://github.com/plastic-bottleneck">GitHub</a>
+        <a href="https://suckless.org">Suckless</a>
+        <a href="https://harmful.cat-v.org/">Harmful</a>
+        <a href="https://openbsd.org/">OpenBSD</a>
+        <a href="http://9front.org">9front</a>
+        <a href="/plus-linux">PlusLinux</a>
+        <a href="/gallery">Gallery</a>
+        <a href="/setup">Setup</a>
+        <a href="/projects">Projects</a>
+        <a href="/contact">Contact</a>
+    </nav>
 
-				<a text-decoration:none;" href="https://github.com/plastic-bottleneck/plus-linux">[ Get Plus Linux ]</a>
+    <h2>Projects</h2>
+    <div class="project-list">
+        <h3>Plus Linux 1.0</h3>
+        <p>
+            Plus Linux is a free GNU/Linux distro designed to fit on a floppy disk! <br>
+            It is built to be small yet functional for experimentation. Currently, it is based <br>
+            on the LTS version of Linux 1.15.127.
+        </p>
+        <p>
+            <a href="https://github.com/plastic-bottleneck/plus-linux" style="color:#ffffff;">
+                [ Get Plus Linux ]
+            </a>
+        </p>
 
-				<p>&nbsp;</p>
+        <h3>PUTILS</h3>
+        <p>
+            PUTILS will serve as the coreutils for Plus Linux once completed. <br>
+            It currently includes basic functions like 'ls' and 'ed2,' a tiny text editor <br>
+            written from scratch in C, inspired by the renowned editor 'ed.'
+        </p>
 
-				<h3>)( PUTILS</h3>
-					<pre>
-PUTILS will serve as the coreutils for Plus Linux once they are completed. 
-Currently, it includes some basic functions like 'ls,' etc. 
-Additionally, it features ED2, which I developed from scratch 
-in C to provide a tiny text editor inspired by
-the renowned editor - 'ed'.
-					</pre>
-		
-				<pre>
+        <pre>
 +--------+-------------------------+--------------------------------------+-----------+
 | util   | what it does            | how to use                           | available |
 +--------+-------------------------+--------------------------------------+-----------+
-| ls     | lists files             | ls [-l] [/path/to/file]              | <a style="color:#a6e3a1;">Y</a>         |
-| cat    | write out a file        | cat [file]                           | <a style="color:#f38ba8;">N</a>         |
-| rm     | remove a file/directory | rm [file/directory]                  | <a style="color:#f38ba8;">N</a>         |
-| cp     | copy a file/directory   | cp [file/directory]                  | <a style="color:#f38ba8;">N</a>         |
-| ed2    | edit files with ed2     | ed [file]                            | <a style="color:#a6e3a1;">Y</a>         |
-| mkdir  | make directories        | mkdir [dir name]                     | <a style="color:#f38ba8;">N</a>         |
-| mv     | move a file/directory   | mv [file/directory] [/path/to/place] | <a style="color:#f38ba8;">N</a>         |
-| pbsh   | shell                   | pbsh (runs the shell)                | <a style="color:#a6e3a1;">Y</a>         |
+| ls     | lists files             | ls [-l] [/path/to/file]              | ✅         |
+| cat    | write out a file        | cat [file]                           | ❌         |
+| rm     | remove a file/directory | rm [file/directory]                  | ❌         |
+| cp     | copy a file/directory   | cp [file/directory]                  | ❌         |
+| ed2    | edit files with ed2     | ed [file]                            | ✅         |
+| mkdir  | make directories        | mkdir [dir name]                     | ❌         |
+| mv     | move a file/directory   | mv [file/directory] [/path/to/place] | ❌         |
+| pbsh   | shell                   | pbsh (runs the shell)                | ✅         |
 +--------+-------------------------+--------------------------------------+-----------+
+        </pre>
+    </div>
 
-2023-2024 -/- Plastic Bottleneck
-				</pre>
-				<p>&nbsp;</p>
-			</center>
-		</font> 
-	</body>
+    <div class="footer">
+        ୨⎯ 2023-2024 (c) Plastic Bottleneck ⎯୧ <br>
+        ...This site is POSIX-compliant...
+    </div>
+</body>
 </html>
