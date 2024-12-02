@@ -77,7 +77,38 @@ __________.__                 .____    .__
         <a href="/projects">Projects</a>
         <a href="/contact">Contact</a>
     </nav>
+	
+    <div class="section">
 
+    <center>
+    <script src="./libv86.js"></script>
+
+    <script>
+    onload = function()
+    {
+        new V86({
+            wasm_path: "./v86.wasm",
+            bios: { url: "./seabios.bin" },
+            vga_bios: { url: "./vgabios.bin" },
+            hda: {
+                url: "./plus.img",
+                size: 2 * 1024 * 1024 * 1024,
+                async: true
+            },
+            memory_size: 512 * 1024 * 1024,
+            screen_container: screen_container,
+            autostart: true,
+        });
+    }
+    </script>
+
+    <div id=screen_container>
+        <div style="white-space: pre; font: 14px monospace"></div>
+        <canvas style="display: none"></canvas>
+    </div>
+    </center>
+    </div>
+	
     <h2>About</h2>
     <div class="section">
         <p>
@@ -121,38 +152,6 @@ __________.__                 .____    .__
 			Get the latest release on <a href="https://github.com/plastic-bottleneck/plus-linux" style="color:#ffffff;">GitHub</a>!
 		</p>
 	</div>
-
-    <h2>Try it!</h2>
-    <div class="section">
-
-    <center>
-    <script src="./libv86.js"></script>
-
-    <script>
-    onload = function()
-    {
-        new V86({
-            wasm_path: "./v86.wasm",
-            bios: { url: "./seabios.bin" },
-            vga_bios: { url: "./vgabios.bin" },
-            hda: {
-                url: "./plus.img",
-                size: 2 * 1024 * 1024 * 1024,
-                async: true
-            },
-            memory_size: 512 * 1024 * 1024,
-            screen_container: screen_container,
-            autostart: true,
-        });
-    }
-    </script>
-
-    <div id=screen_container>
-        <div style="white-space: pre; font: 14px monospace"></div>
-        <canvas style="display: none"></canvas>
-    </div>
-    </center>
-    </div>
 
     <div class="footer">
         ୨⎯ 2023-2024 (c) Plastic Bottleneck ⎯୧ <br>
