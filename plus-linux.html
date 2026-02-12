@@ -2,156 +2,194 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plus Linux</title>
-    <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        pre {
-            white-space: pre-wrap;
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #ffffff;
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        h2 {
-            text-align: center;
-            margin: 30px 0 10px;
-        }
-        p, pre {
-            text-align: center;
-            margin: 10px 0;
-        }
-        .section {
-            margin: 0 auto;
-            max-width: 800px;
-            text-align: left;
-            padding: 10px;
-            border: 1px solid #ffffff;
-            border-radius: 10px;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#0a0a00">
+    <title>Plus Linux - Man Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="libv86.js"></script>
 </head>
 <body>
-    <pre>
-__________.__                 .____    .__                     
-\______   \  |  __ __  ______ |    |   |__| ____  __ _____  ___
- |     ___/  | |  |  \/  ___/ |    |   |  |/    \|  |  \  \/  /
- |    |   |  |_|  |  /\___ \  |    |___|  |   |  \  |  />    < 
- |____|   |____/____//____  > |_______ \__|___|  /____//__/\_ \
-                          \/          \/       \/            \/
-    </pre>
-
-    <nav>
-        <a href="/">Home</a>
-        <a href="https://github.com/plastic-bottleneck">GitHub</a>
-        <a href="https://suckless.org">Suckless</a>
-        <a href="https://harmful.cat-v.org/">Harmful</a>
-        <a href="https://openbsd.org/">OpenBSD</a>
-        <a href="http://9front.org">9front</a>
-        <a href="/plus-linux">PlusLinux</a>
-        <a href="/gallery">Gallery</a>
-        <a href="/setup">Setup</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
-    </nav>
-	
-    <div class="section">
-
-    <center>
-    <script src="./libv86.js"></script>
-
+    <div class="terminal">
+        <pre class="ascii-art">
+ ________  ___       ___  ___  ________            
+|\   __  \|\  \     |\  \|\  \|\   ____\           
+\ \  \|\  \ \  \    \ \  \\\  \ \  \___|_          
+ \ \   ____\ \  \    \ \  \\\  \ \_____  \         
+  \ \  \___|\ \  \____\ \  \\\  \|____|\  \        
+   \ \__\    \ \_______\ \_______\____\_\  \       
+    \|__|     \|_______|\|_______|\_________\      
+                                 \|_________|      
+                                                   
+                                                   
+ ___       ___  ________   ___  ___     ___    ___ 
+|\  \     |\  \|\   ___  \|\  \|\  \   |\  \  /  /|
+\ \  \    \ \  \ \  \\ \  \ \  \\\  \  \ \  \/  / /
+ \ \  \    \ \  \ \  \\ \  \ \  \\\  \  \ \    / / 
+  \ \  \____\ \  \ \  \\ \  \ \  \\\  \  /     \/  
+   \ \_______\ \__\ \__\\ \__\ \_______\/  /\   \  
+    \|_______|\|__|\|__| \|__|\|_______/__/ /\ __\ 
+                                       |__|/ \|__| 
+        </pre>
+        
+        <div class="nav-ls">
+            <div class="nav-list">
+                <span class="nav-item"><a href="index.html">Home</a></span>
+                <span class="nav-item"><a href="plus-linux.html">PlusLinux</a></span>
+                <span class="nav-item"><a href="gallery.html">Gallery</a></span>
+                <span class="nav-item"><a href="setup.html">Setup</a></span>
+                <span class="nav-item"><a href="projects.html">Projects</a></span>
+                <span class="nav-item"><a href="contact.html">Contact</a></span>
+            </div>
+        </div>
+        
+        <div class="prompt">man plus-linux</div>
+        
+        <div class="man-header">
+            <span>PLUS-LINUX(1)</span>
+            <span>User Manual</span>
+            <span>PLUS-LINUX(1)</span>
+        </div>
+        
+        <div class="section-title">NAME</div>
+        <div class="section">
+            <p>Plus Linux – A GNU-free Linux distribution fitting on a floppy disk</p>
+        </div>
+        
+        <div class="section-title">SYNOPSIS</div>
+        <div class="section">
+            <p>Plus Linux is based on Kernel 5.15.127 (LTS) at a small size. It uses Busybox instead of GNU.</p>
+        </div>
+        
+        <div class="section-title">DESCRIPTION</div>
+        <div class="section">
+            <p>In the future, custom coreutils in C may be created to reduce bloat even further.</p>
+            <p>Plus Linux is based on Kernel 5.15.127 and uses Busybox as the system utilities. It is completely GNU and Systemd free.</p>
+            <p>The goal is to fit on a single floppy disk (1.44Mb).</p>
+        </div>
+        
+        <div class="section-title">LIVE DEMO</div>
+        <div class="section">
+            <p>Try Plus Linux directly in your browser! The font might be bugged a bit for you...</p>
+            
+            <div id="vm-container" class="vm-container">
+                <div class="vm-header">
+                    <span class="vm-title">Plus Linux VM</span>
+                    <div class="vm-controls">
+                        <button id="vm-start" class="vm-btn">Start</button>
+                        <button id="vm-stop" class="vm-btn" disabled>Stop</button>
+                        <button id="vm-restart" class="vm-btn" disabled>Restart</button>
+                    </div>
+                </div>
+                <div id="screen_container" class="vm-screen">
+                    <div id="vm-placeholder" class="vm-placeholder">
+                        <p>Click "Start" to boot Plus Linux</p>
+                        <p class="vm-hint">May become buggy! Try the image in qemu instead.</p>
+                    </div>
+                </div>
+                <div class="vm-status-bar">
+                    <span id="vm-status">[Stopped]</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-title">FEATURES</div>
+        <div class="section">
+            <p>Plus Linux is so minimal that you cannot move files with `mv`. To save space, use `cp` and `rm` instead!</p>
+            <p>It can run on older machines like an IBM NetVista from 2000.</p>
+            <p>Dark mode is enabled by default!</p>
+        </div>
+        
+        <div class="section-title">DOWNLOAD</div>
+        <div class="section">
+            <p>Get the latest release on <a href="https://github.com/plastic-bottleneck/plus-linux">GitHub</a>!</p>
+        </div>
+        
+        <div class="section-title">SEE ALSO</div>
+        <div class="section">
+            <p><a href="projects.html">projects(1)</a>, <a href="https://github.com/plastic-bottleneck">github(1)</a></p>
+        </div>
+        
+        <div class="footer">
+            <span class="cursor"></span>
+        </div>
+    </div>
+    
     <script>
-    onload = function()
-    {
-        new V86({
-            wasm_path: "./v86.wasm",
-            bios: { url: "./seabios.bin" },
-            vga_bios: { url: "./vgabios.bin" },
-            hda: {
-                url: "./plus.img",
-                size: 2 * 1024 * 1024 * 1024,
-                async: true
-            },
-            memory_size: 512 * 1024 * 1024,
-            screen_container: screen_container,
-            autostart: true,
+        var emulator = null;
+        var startBtn = document.getElementById("vm-start");
+        var stopBtn = document.getElementById("vm-stop");
+        var restartBtn = document.getElementById("vm-restart");
+        var statusEl = document.getElementById("vm-status");
+        var placeholderEl = document.getElementById("vm-placeholder");
+        var screenContainer = document.getElementById("screen_container");
+        
+        function setStatus(text) {
+            statusEl.textContent = text;
+        }
+        
+        function updateButtons(running) {
+            startBtn.disabled = running;
+            stopBtn.disabled = !running;
+            restartBtn.disabled = !running;
+        }
+        
+        startBtn.addEventListener("click", function() {
+            if (emulator) return;
+            
+            placeholderEl.style.display = "none";
+            setStatus("[Loading...]");
+            
+            emulator = new V86({
+                wasm_path: "v86.wasm",
+                bios: { url: "seabios.bin" },
+                vga_bios: { url: "vgabios.bin" },
+                fda: {
+                    url: "plus.img",
+                    size: 2 * 1024 * 1024 * 1024,
+                    async: true
+                },
+                memory_size: 512 * 1024 * 1024,
+                screen_container: screenContainer,
+                autostart: true,
+            });
+            
+            emulator.add_listener("emulator-ready", function() {
+                setStatus("[Running]");
+                updateButtons(true);
+            });
+            
+            emulator.add_listener("emulator-stopped", function() {
+                setStatus("[Stopped]");
+                updateButtons(false);
+                emulator = null;
+            });
+            
+            emulator.add_listener("download-progress", function(e) {
+                if (e.total > 0) {
+                    var pct = Math.round(e.loaded / e.total * 100);
+                    setStatus("[Loading: " + pct + "%]");
+                }
+            });
         });
-    }
+        
+        stopBtn.addEventListener("click", function() {
+            if (emulator) {
+                emulator.stop();
+                emulator = null;
+                setStatus("[Stopped]");
+                updateButtons(false);
+                // Restore placeholder
+                placeholderEl.style.display = "flex";
+                screenContainer.innerHTML = '<div id="vm-placeholder" class="vm-placeholder"><p>Click "Start" to boot Plus Linux</p><p class="vm-hint">Requires ~2GB download</p></div>';
+            }
+        });
+        
+        restartBtn.addEventListener("click", function() {
+            if (emulator) {
+                emulator.restart();
+                setStatus("[Restarting...]");
+            }
+        });
     </script>
-
-    <div id=screen_container>
-        <div style="white-space: pre; font: 14px monospace"></div>
-        <canvas style="display: none"></canvas>
-    </div>
-    </center>
-    </div>
-	
-    <h2>About</h2>
-    <div class="section">
-        <p>
-            Plus Linux is based on Kernel 5.15.127 (LTS) at a small size. <br>
-            It also uses Busybox instead of GNU. <br>
-            In the future, I may create custom coreutils in C to reduce bloat even further.
-        </p>
-    </div>
-
-    <h2>What it offers</h2>
-    <div class="section">
-        <p>
-            <strong>Main</strong> <br>
-            Plus Linux is based on Kernel 5.15.127 and uses Busybox as the system utilities. <br>
-            It is completely GNU and Systemd free.
-        </p>
-        <p>
-            <strong>Goals</strong> <br>
-            Plus Linux is designed to fit on a single floppy disk (1.44Mb). <br>
-            Yea, that's it by now...
-        </p>
-    </div>
-
-    <h2>Features</h2>
-    <div class="section">
-        <p>
-            Plus Linux is so bad that you cannot move files with <code>mv</code>. <br>
-            To save space, use <code>cp</code> and <code>rm</code> instead! <br>
-            It can run on older machines like an IBM NetVista from 2000. <br>
-            Dark mode is enabled by default. <br>
-        </p>
-    </div>
-
-    <h2>Download</h2>
-    <div class="section">
-		<p>
-			Get the latest release on <a href="https://github.com/plastic-bottleneck/plus-linux" style="color:#ffffff;">GitHub</a>!
-		</p>
-	</div>
-
-    <div class="footer">
-        ୨⎯ 2023-2026 (c) Plastic Bottleneck ⎯୧ <br>
-        ...This site is POSIX-compliant...
-    </div>
 </body>
 </html>

@@ -2,103 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, nav, footer {
-            text-align: center;
-            padding: 20px;
-        }
-        header pre {
-            white-space: pre-wrap;
-            font-size: 1.2rem;
-            margin: 0;
-        }
-	pre {
-            white-space: pre-wrap;
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav {
-            margin-top: 10px;
-            border-bottom: 2px solid #ffffff;
-            padding-bottom: 10px;
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            max-width: 800px;
-            margin: 20px auto;
-            text-align: center;
-        }
-	.footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-	.section {
-            margin: 0 auto;
-            max-width: 800px;
-            text-align: left;
-            padding: 10px;
-            border: 1px solid #ffffff;
-            border-radius: 10px;
-        }
-	
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#0a0a00">
+    <title>Contact - Man Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <pre>
- _______  _______  __    _  _______  _______  _______  _______ 
-|       ||       ||  |  | ||       ||   _   ||       ||       |
-|       ||   _   ||   |_| ||_     _||  |_|  ||       ||_     _|
-|       ||  | |  ||       |  |   |  |       ||       |  |   |  
-|      _||  |_|  ||  _    |  |   |  |       ||      _|  |   |  
-|     |_ |       || | |   |  |   |  |   _   ||     |_   |   |  
-|_______||_______||_|  |__|  |___|  |__| |__||_______|  |___|  
+    <div class="terminal">
+        <pre class="ascii-art">
+  ,- _~.               ,               , 
+ (' /|                ||    _         || 
+((  ||    /'\\ \\/\\ =||=  < \,  _-_ =||=
+((  ||   || || || ||  ||   /-|| ||    || 
+ ( / |   || || || ||  ||  (( || ||    || 
+  -____- \\,/  \\ \\  \\,  \/\\ \\,/  \\,
         </pre>
-    </header>
-
-    <nav>
-        <a href="/">Home</a>
-        <a href="https://github.com/plastic-bottleneck">GitHub</a>
-        <a href="https://suckless.org">Suckless</a>
-        <a href="https://harmful.cat-v.org/">Harmful</a>
-        <a href="https://openbsd.org/">OpenBSD</a>
-        <a href="http://9front.org">9front</a>
-        <a href="/plus-linux">PlusLinux</a>
-        <a href="/gallery">Gallery</a>
-        <a href="/setup">Setup</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
-    </nav>
-
-    <div class="content">
-        <h2>Contact me</h2>
-        <div class="section">
-            <pre>
-IRC (irc.libera.chat): plbn
-            </pre>
+        
+        <!-- Navigation -->
+        <div class="nav-ls">
+            <div class="nav-list">
+                <span class="nav-item"><a href="index.html">Home</a></span>
+                <span class="nav-item"><a href="plus-linux.html">PlusLinux</a></span>
+                <span class="nav-item"><a href="gallery.html">Gallery</a></span>
+                <span class="nav-item"><a href="setup.html">Setup</a></span>
+                <span class="nav-item"><a href="projects.html">Projects</a></span>
+                <span class="nav-item"><a href="contact.html">Contact</a></span>
+            </div>
         </div>
-    </div>
-
-    <div class="footer">
-        ୨⎯ 2023-2026 (c) Plastic Bottleneck ⎯୧ <br>
-        ...This site is POSIX-compliant...
+        
+        <!-- Man command -->
+        <div class="prompt">man contact</div>
+        
+        <div class="man-header">
+            <span>CONTACT(1)</span>
+            <span>User Manual</span>
+            <span>CONTACT(1)</span>
+        </div>
+        
+        <div class="section-title">NAME</div>
+        <div class="section">
+            <p>Contact – How to reach Plastic Bottleneck</p>
+        </div>
+        
+        <div class="section-title">IRC</div>
+        <div class="section">
+            <div class="contact-line">
+                <span class="contact-label">Server:</span> irc.libera.chat
+            </div>
+            <div class="contact-line">
+                <span class="contact-label">Nickname:</span> plbn
+            </div>
+            <div class="contact-line">
+                <span class="contact-label">Channels:</span> #plan9, #openbsd, #hamradio, ##chat, #linux
+            </div>
+        </div>
+        
+        <div class="section-title">GITHUB</div>
+        <div class="section">
+            <div class="contact-line">
+                <span class="contact-label">User:</span> <a href="https://github.com/plastic-bottleneck">plastic-bottleneck</a>
+            </div>
+        </div>
+        
+        <div class="section-title">WEB</div>
+        <div class="section">
+            <div class="contact-line">
+                <span class="contact-label">Site:</span> <a href="https://plastic-bottleneck.github.io">plastic-bottleneck.github.io</a>
+            </div>
+        </div>
+        
+        <!-- Footer - left aligned with copyright -->
+        <div class="footer-line">
+            <p style="margin-top: 15px;">term% <span class="cursor"></span></p>
+        </div>
     </div>
 </body>
 </html>

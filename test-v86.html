@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>v86 Test</title>
+</head>
+<body>
+    <h1>v86 Test</h1>
+    <div id="screen" style="width: 640px; height: 400px; background: #000;"></div>
+    <p id="status">Click to start</p>
+    <button onclick="start()">Start</button>
+    
+    <script src="v86/libv86.js"></script>
+    <script>
+        function start() {
+            document.getElementById("status").textContent = "Loading...";
+            
+            // Use V86Starter for proper async loading
+            var emulator = new V86({
+                wasm_path: "v86/v86.wasm",
+                memory_size: 32 * 1024 * 1024,
+                vga_memory_size: 2 * 1024 * 1024,
+                screen_container: document.getElementById("screen"),
+                bios: {
+                    url: "v86/seabios.bin",
+                    async: true
+                },
+                vga_bios: {
+                    url: "v86/vgabios.bin",
+                    async: true
+                },
+                cdrom: {
+                    url: "https://copy.sh/v86/images/linux3.iso",
+                    async: true
+                },
+                autostart: false
+            });
+            
+            // Manually start after a short delay to allow downloads
+            setTimeout(function() {
+                emulator.run();
+                document.getElementById("status").textContent = "Started";
+            }, 1000);
+            
+            emulator.add_listener("emulator-ready", function() {
+                document.getElementById("status").textContent = "Running!";
+            });
+            
+            emulator.add_listener("download-progress", function(e) {
+                console.log("Loading:", e.file, e.loaded, "/", e.total);
+                document.getElementById("status").textContent = 
+                    "Loading " + e.file.split('/').pop() + "...";
+            });
+        }
+    </script>
+</body>
+</html>

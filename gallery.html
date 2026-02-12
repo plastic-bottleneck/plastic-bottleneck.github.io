@@ -2,121 +2,132 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery</title>
-    <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header, nav, footer {
-            text-align: center;
-            padding: 20px;
-        }
-        header pre {
-            white-space: pre-wrap;
-            font-size: 1.2rem;
-            margin: 0;
-        }
-        nav {
-            margin-top: 10px;
-            border-bottom: 2px solid #ffffff;
-            padding-bottom: 10px;
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-        .gallery-item {
-            margin: 20px 0;
-            text-align: center;
-        }
-        .gallery-item img {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #ffffff;
-            border-radius: 10px;
-            margin: 10px 0;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#0a0a00">
+    <title>Gallery - Man Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <pre>
-   _|_|_|            _|  _|                              
- _|          _|_|_|  _|  _|    _|_|    _|  _|_|  _|    _|
- _|  _|_|  _|    _|  _|  _|  _|_|_|_|  _|_|      _|    _|
- _|    _|  _|    _|  _|  _|  _|        _|        _|    _|
-   _|_|_|    _|_|_|  _|  _|    _|_|_|  _|          _|_|_|
-                                                       _|
-                                                   _|_|  
+    <div class="terminal">
+        <pre class="ascii-art">
+      # ###              ###   ###                                      
+    /  /###  /            ###   ###                                     
+   /  /  ###/              ##    ##                                     
+  /  ##   ##               ##    ##                                     
+ /  ###                    ##    ##                                     
+##   ##            /###    ##    ##      /##  ###  /###   ##   ####     
+##   ##   ###     / ###  / ##    ##     / ###  ###/ #### / ##    ###  / 
+##   ##  /###  / /   ###/  ##    ##    /   ###  ##   ###/  ##     ###/  
+##   ## /  ###/ ##    ##   ##    ##   ##    ### ##         ##      ##   
+##   ##/    ##  ##    ##   ##    ##   ########  ##         ##      ##   
+ ##  ##     #   ##    ##   ##    ##   #######   ##         ##      ##   
+  ## #      /   ##    ##   ##    ##   ##        ##         ##      ##   
+   ###     /    ##    /#   ##    ##   ####    / ##         ##      ##   
+    ######/      ####/ ##  ### / ### / ######/  ###         #########   
+      ###         ###   ##  ##/   ##/   #####    ###          #### ###  
+                                                                    ### 
+                                                             #####   ###
+                                                           /#######  /# 
+                                                          /      ###/   
         </pre>
-    </header>
+        
+        <!-- Navigation -->
+        <div class="nav-ls">
+            <div class="nav-list">
+                <span class="nav-item"><a href="index.html">Home</a></span>
+                <span class="nav-item"><a href="plus-linux.html">PlusLinux</a></span>
+                <span class="nav-item"><a href="gallery.html">Gallery</a></span>
+                <span class="nav-item"><a href="setup.html">Setup</a></span>
+                <span class="nav-item"><a href="projects.html">Projects</a></span>
+                <span class="nav-item"><a href="contact.html">Contact</a></span>
+            </div>
+        </div>
+        
+        <!-- Man command -->
+        <div class="prompt">man gallery</div>
+        
+        <div class="man-header">
+            <span>GALLERY(1)</span>
+            <span>User Manual</span>
+            <span>GALLERY(1)</span>
+        </div>
+        
+        <div class="section-title">NAME</div>
+        <div class="section">
+            <p>Gallery – Collection of hardware and lab photographs</p>
+        </div>
+        
+        <div class="section-title">INFO</div>
+        <div class="section">
+            <p>The images are actually in color! You can open them in a new tab to view them in full color.
+        </div>
 
-    <nav>
-        <a href="/">Home</a>
-        <a href="https://github.com/plastic-bottleneck">GitHub</a>
-        <a href="https://suckless.org">Suckless</a>
-        <a href="https://harmful.cat-v.org/">Harmful</a>
-        <a href="https://openbsd.org/">OpenBSD</a>
-        <a href="http://9front.org">9front</a>
-        <a href="/plus-linux">PlusLinux</a>
-        <a href="/gallery">Gallery</a>
-        <a href="/setup">Setup</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
-    </nav>
-
-    <div class="gallery">
+        <div class="section-title">CONTENTS</div>
+        
         <div class="gallery-item">
             <h3>)( New Lab (December 2025)</h3>
-            <img src="/gallery/IMG_20251222_151131_954-min.jpg"="New Lab">
-            <pre>This is my lab today!<br>Currently running OpenBSD and 9front!<br>22nd December, 2025</pre>
+            <div class="gallery-img-container">
+                <img src="gallery/new_lab.webp" 
+                     alt="New Lab Setup" 
+                     class="gallery-img"
+                     loading="lazy">
+            </div>
+            <p>This is my lab today! Currently running OpenBSD and 9front!</p>
+            <div class="gallery-date">22nd December, 2025</div>
         </div>
+        
         <div class="gallery-item">
-            <h3>)( 9front demo</h3>
-            <img src="/gallery/IMG_20251205_112929_493.jpg"="9front demo">
-            <pre>To see is a demonstartion of a small 9front rig I held at a school in Hesse, Germany.<br>I've shown people the beauty of plan9!<br>05th December, 2025</pre>
+            <h3>)( 9front Demo</h3>
+            <div class="gallery-img-container">
+                <img src="gallery/9front.webp" 
+                     alt="9front Demo at School" 
+                     class="gallery-img"
+                     loading="lazy">
+            </div>
+            <p>A demonstration of a small 9front rig held at a school in Hesse, Germany. Shown people the beauty of plan9!</p>
+            <div class="gallery-date">05th December, 2025</div>
         </div>
+        
         <div class="gallery-item">
             <h3>)( Old Lab (January 2025)</h3>
-            <img src="/gallery/IMG_20250114_205245_907.jpg" alt="Old Lab">
-            <pre>Listed here is my old Lab I've used.<br>14th January, 2025</pre>
+            <div class="gallery-img-container">
+                <img src="gallery/old_lab.webp" 
+                     alt="Old Lab Setup" 
+                     class="gallery-img"
+                     loading="lazy">
+            </div>
+            <p>My old Lab setup.</p>
+            <div class="gallery-date">14th January, 2025</div>
         </div>
+        
         <div class="gallery-item">
             <h3>)( Rack</h3>
-            <img src="/gallery/IMG_20240228_212427_742.jpg" alt="Server Rack">
-            <pre>This is my server rack filled with some servers.<br>I use it for networking and more!<br>28th February, 2024</pre>
+            <div class="gallery-img-container">
+                <img src="gallery/rack.webp" 
+                     alt="Server Rack" 
+                     class="gallery-img"
+                     loading="lazy">
+            </div>
+            <p>Server rack filled with servers. Used for networking and more!</p>
+            <div class="gallery-date">28th February, 2024</div>
         </div>
+        
         <div class="gallery-item">
             <h3>)( Plus Linux</h3>
-            <img src="/gallery/Plus-Linux.png" alt="Plus Linux">
-            <pre>Starting with the first Image of Plus Linux Version 1.0<br>19th August, 2023</pre>
+            <div class="gallery-img-container">
+                <img src="gallery/Plus-Linux.webp" 
+                     alt="Plus Linux Version 1.0" 
+                     class="gallery-img"
+                     loading="lazy">
+            </div>
+            <p>First Image of Plus Linux Version 1.0</p>
+            <div class="gallery-date">19th August, 2023</div>
         </div>
-    </div>
 
-    <div class="footer">
-        ୨⎯ 2023-2026 (c) Plastic Bottleneck ⎯୧ <br>
-        ...This site is POSIX-compliant...
+        <!-- Footer - left aligned -->
+        <div class="footer">
+            <span class="cursor"></span>
+        </div>
     </div>
 </body>
 </html>

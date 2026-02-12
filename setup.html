@@ -2,154 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setup</title>
-    <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        pre {
-            white-space: pre-wrap;
-            text-align: center;
-            margin: 20px 0;
-        }
-        nav {
-            text-align: center;
-            margin: 20px 0;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #ffffff;
-        }
-        nav a {
-            color: #ffffff;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        h2, h3 {
-            text-align: center;
-            margin: 20px 0;
-        }
-        table {
-            margin: 0 auto;
-            border-collapse: collapse;
-            width: auto;
-            color: #ffffff;
-        }
-        th, td {
-            border: 1px solid #ffffff;
-            padding: 8px 12px;
-            text-align: center;
-        }
-        th {
-            background-color: #444444;
-        }
-        .footer {
-            text-align: center;
-            margin-top: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#0a0a00">
+    <title>Setup - Man Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <pre>
-      ___           ___                         ___                   
-     /  /\         /  /\          ___          /  /\          ___     
-    /  /::\       /  /::\        /__/\        /  /:/         /  /\    
-   /__/:/\:\     /  /:/\:\       \  \:\      /  /:/         /  /::\   
-  _\_ \:\ \:\   /  /::\ \:\       \__\:\    /  /:/         /  /:/\:\  
- /__/\ \:\ \:\ /__/:/\:\ \:\      /  /::\  /__/:/     /\  /  /::\ \:\ 
- \  \:\ \:\_\/ \  \:\ \:\_\/     /  /:/\:\ \  \:\    /:/ /__/:/\:\_\:\
-  \  \:\_\:\    \  \:\ \:\      /  /:/__\/  \  \:\  /:/  \__\/  \:\/:/
-   \  \:\/:/     \  \:\_\/     /__/:/        \  \:\/:/        \  \::/ 
-    \  \::/       \  \:\       \__\/          \  \::/          \__\/  
-     \__\/         \__\/                       \__\/                  
-    </pre>
-
-    <nav>
-        <a href="/">Home</a>
-        <a href="https://github.com/plastic-bottleneck">GitHub</a>
-        <a href="https://suckless.org">Suckless</a>
-        <a href="https://harmful.cat-v.org/">Harmful</a>
-        <a href="https://openbsd.org/">OpenBSD</a>
-        <a href="http://9front.org">9front</a>
-        <a href="/plus-linux">PlusLinux</a>
-        <a href="/gallery">Gallery</a>
-        <a href="/setup">Setup</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
-    </nav>
-
-    <h2>Setup</h2>
-
-    <h3>Main PC specs</h3>
-    <table>
-        <tr>
-            <th>Part</th>
-            <th>Type</th>
-        </tr>
-        <tr>
-            <td>APU</td>
-            <td>Ryzen 7 5700G</td>
-        </tr>
-        <tr>
-            <td>RAM</td>
-            <td>64GB</td>
-        </tr>
-        <tr>
-            <td>SSD BOOT</td>
-            <td>512GB</td>
-        </tr>
-        <tr>
-            <td>SSD DATA1</td>
-            <td>4TB</td>
-        </tr>
-        <tr>
-            <td>HDD DATA2</td>
-            <td>8TB</td>
-        </tr>
-    </table>
-
-    <h3>Software</h3>
-    <table>
-        <tr>
-            <th>Type</th>
-            <th>Name</th>
-        </tr>
-        <tr>
-            <td>OS</td>
-            <td>OpenBSD 7.8</td>
-        </tr>
-        <tr>
-            <td>OS (over drawterm)</td>
-            <td>9front</td>
-        </tr>
-        <tr>
-            <td>Shell</td>
-            <td>KSH</td>
-        </tr>
-        <tr>
-            <td>Terminal</td>
-            <td>ST</td>
-        </tr>
-        <tr>
-            <td>Display Manager</td>
-            <td>Xorg</td>
-        </tr>
-        <tr>
-            <td>Window Manager</td>
-            <td>DWM</td>
-        </tr>
-    </table>
-
-    <div class="footer">
-        ୨⎯ 2023-2026 (c) Plastic Bottleneck ⎯୧ <br>
-        ...This site is POSIX-compliant...
+    <div class="terminal">
+        <pre class="ascii-art">
+ .d8888b.           888                     
+d88P  Y88b          888                     
+Y88b.               888                     
+ "Y888b.    .d88b.  888888 888  888 88888b. 
+    "Y88b. d8P  Y8b 888    888  888 888 "88b
+      "888 88888888 888    888  888 888  888
+Y88b  d88P Y8b.     Y88b.  Y88b 888 888 d88P
+ "Y8888P"   "Y8888   "Y888  "Y88888 88888P" 
+                                    888     
+                                    888     
+                                    888     
+        </pre>
+        
+        <!-- Navigation -->
+        <div class="nav-ls">
+            <div class="nav-list">
+                <span class="nav-item"><a href="index.html">Home</a></span>
+                <span class="nav-item"><a href="plus-linux.html">PlusLinux</a></span>
+                <span class="nav-item"><a href="gallery.html">Gallery</a></span>
+                <span class="nav-item"><a href="setup.html">Setup</a></span>
+                <span class="nav-item"><a href="projects.html">Projects</a></span>
+                <span class="nav-item"><a href="contact.html">Contact</a></span>
+            </div>
+        </div>
+        
+        <!-- Man command -->
+        <div class="prompt">man setup</div>
+        
+        <div class="man-header">
+            <span>SETUP(1)</span>
+            <span>User Manual</span>
+            <span>SETUP(1)</span>
+        </div>
+        
+        <div class="section-title">NAME</div>
+        <div class="section">
+            <p>Setup – Main PC specifications and software configuration</p>
+        </div>
+        
+        <div class="section-title">HARDWARE</div>
+        <div class="section">
+            <table>
+                <tr>
+                    <td>APU</td>
+                    <td>Ryzen 7 5700G</td>
+                </tr>
+                <tr>
+                    <td>RAM</td>
+                    <td>64GB</td>
+                </tr>
+                <tr>
+                    <td>SSD BOOT</td>
+                    <td>512GB</td>
+                </tr>
+                <tr>
+                    <td>SSD DATA1</td>
+                    <td>4TB</td>
+                </tr>
+                <tr>
+                    <td>HDD DATA2</td>
+                    <td>8TB</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section-title">SOFTWARE</div>
+        <div class="section">
+            <table>
+                <tr>
+                    <td>OS</td>
+                    <td>OpenBSD 7.8</td>
+                </tr>
+                <tr>
+                    <td>OS (drawterm)</td>
+                    <td>9front</td>
+                </tr>
+                <tr>
+                    <td>Shell</td>
+                    <td>KSH</td>
+                </tr>
+                <tr>
+                    <td>Terminal</td>
+                    <td>ST</td>
+                </tr>
+                <tr>
+                    <td>Display Manager</td>
+                    <td>Xorg</td>
+                </tr>
+                <tr>
+                    <td>Window Manager</td>
+                    <td>DWM</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section-title">NOTES</div>
+        <div class="section">
+            <p>Primary operating systems in daily use: OpenBSD and 9front. The 9front grid consists of 1 file server, 1 authentication server, and 16 CPU servers.</p>
+        </div>
+        
+        <!-- Footer - left aligned -->
+        <div class="footer">
+            <span class="cursor"></span>
+        </div>
     </div>
 </body>
 </html>
