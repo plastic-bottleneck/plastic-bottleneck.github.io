@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#0a0a00">
+    <title>CATS!!! - Man Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal">
+        <pre class="ascii-art">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+ ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣀⣠⣤⣤⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣤⣤⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⣈⡉⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢺⠿⠿⣦⡀⠢⡀⠀⢀⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣤⡀⠀⠀⢀⣴⣿⣿⡇⠘⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡷⢀⣹⣿⠦⠈⠢⡈⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⠀⢀⡴⠿⣯⣽⣿⠃⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢳⢄⠀⣐⣒⣀⠀⠈⠢⡈⠻⢿⣿⣿⡿⠿⠛⢛⣛⣛⣛⣛⣛⡛⠿⠿⣿⣿⣿⠿⠋⠀⢀⣤⣍⣉⠉⢩⣿⠇⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠀⠐⠚⠛⠿⠃⠀⠀⠈⠑⠒⠾⠑⢶⡾⢿⡿⣿⣿⡿⢿⣿⣿⢓⠲⡶⠄⠒⠀⢀⠔⢉⠐⠛⠻⠿⣿⡏⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠹⠙⠂⠀⠀⠀⠀⠀⣀⣀⠀⢠⠁⠟⠇⣷⡀⣻⣇⣀⠂⠀⠀⠀⠚⠃⢘⣾⣭⣴⣿⣿⢀⠀⣤⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡆⠀⠀⠀⠀⠐⠀⠀⠀⠀⠀⠀⡆⠀⠘⢿⠀⢺⢀⡆⠀⣮⠁⠀⠸⢻⠀⠠⠀⡀⠀⠀⠈⠙⠿⣿⣌⡻⢼⢠⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣾⣷⡀⠀⠀⠀⠀⠀⢀⣶⣶⣤⣦⡌⠀⠀⠀⠀⠈⠄⠅⠘⠈⠂⠀⠀⠰⢲⢄⣁⠀⠶⢀⣀⠀⠙⡁⠨⠡⠂⣸⣿⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣧⠀⠀⠀⢀⣤⣖⠨⠽⠤⠌⠁⠀⠀⠀⠀⠀⠀⠀⣄⠀⠈⠀⠀⠀⠀⣀⠁⢴⣦⣉⣏⣀⣉⠀⠀⡔⣰⣿⣿⣿⣿⠂⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⠁⠀⠀⠛⠛⠙⠃⣠⣤⠀⠀⠀⠀⠀⠀⠀⠀⢤⠀⠀⠀⠀⠀⠀⠀⢨⣭⡀⢉⠻⣿⣿⣿⣆⠰⣷⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⣿⣿⠀⢸⡂⠀⠀⠀⠀⠀⣀⠻⠰⡄⠀⢰⡆⡀⣸⣿⡗⠈⠐⢬⣍⣻⣿⣷⡈⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣷⠀⠀⠀⠀⠀⢢⠀⠙⠷⣬⠟⣁⡀⠀⠀⠀⠀⣸⣦⡈⠣⣦⣈⠻⠤⠟⠋⠀⠈⠀⣈⣟⣉⣻⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠈⡳⢶⣄⠀⠀⠀⠀⠀⠠⠘⣿⣿⣇⠀⠘⣯⠧⠀⠀⠀⠀⠀⣼⡿⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⡀⠀⠀⢰⣿⣿⣿⡏⠀⢀⣿⡤⠀⣀⠀⠀⣼⠋⢉⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠞⠛⠿⣿⣧⡀⠈⣻⡗⠛⠿⠄⠈⠀⠠⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠀⡀⠁⢀⣼⣏⣛⣡⡴⠋⠉⠙⠟⠛⠯⣭⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠉⠶⢿⡍⣭⣍⡺⢶⣉⠩⠙⣱⣞⣒⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⡤⠀⠀⠲⢂⣀⣽⣿⢦⣁⠀⣵⣖⣬⣽⡟⣿⣿⣿⣿⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣴⣿⣿⡏⢤⡘⠿⢮⠿⢿⣿⣿⣿⣿⡿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠦⠺⠛⠛⠁⠀⠁⠀⠀⠀⠀⠀⠀⠸⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+        </pre>
+        
+        <!-- Navigation -->
+        <div class="nav-ls">
+            <div class="nav-list">
+                <span class="nav-item"><a href="index.html">Home</a></span>
+                <span class="nav-item"><a href="plus-linux.html">PlusLinux</a></span>
+                <span class="nav-item"><a href="gallery.html">Gallery</a></span>
+                <span class="nav-item"><a href="setup.html">Setup</a></span>
+                <span class="nav-item"><a href="projects.html">Projects</a></span>
+                <span class="nav-item"><a href="contact.html">Contact</a></span>
+                <span class="nav-item"><a href="https://github.com/plastic-bottleneck">GitHub</a></span>
+                <span class="nav-item"><a href="https://suckless.org">Suckless</a></span>
+                <span class="nav-item"><a href="https://harmful.cat-v.org/">Harmful</a></span>
+                <span class="nav-item"><a href="https://openbsd.org/">OpenBSD</a></span>
+                <span class="nav-item"><a href="http://9front.org">9front</a></span>
+                <span class="nav-item"><a href="cat.html">Cats</a></span>
+            </div>
+        </div>
+        
+        <div class="prompt">man cats</div>
+        
+        <div class="man-header">
+            <span>CATS(1)</span>
+            <span>User Manual</span>
+            <span>CATS(1)</span>
+        </div>
+        
+        <div class="section-title">NAME</div>
+        <div class="section">
+            <p>cats – Download large amounts of cat images</p>
+        </div>
+        
+        <div class="section-title">SYNOPSIS</div>
+        <div class="section">
+            <p>Do you want to download large amounts of cat images? Maybe 5000 of them?</p>
+            <p>TRY <a href="https://github.com/plastic-bottleneck/ccat">CCAT</a> NOW!!!</p>
+        </div>
+        
+        <div class="section-title">DESCRIPTION</div>
+        <div class="section">
+            <p>CCAT is a simple C program that downloads a specified number of cat images from the internet.</p>
+            <p>It's free to use or modify, intended to be a simple example of using libcurl and libjson-c in a C program.</p>
+            <p>Fork it, optimize it, and share the love of cats!</p>
+        </div>
+        
+        <div class="section-title">GALLERY</div>
+        <div class="section">
+            <div class="cat-gallery">
+                <div class="cat-img-container">
+                    <img src="cats/gyat.png" alt="gyat" class="cat-img">
+                    <span class="cat-label">gyat.png</span>
+                </div>
+                <div class="cat-img-container">
+                    <img src="cats/bread.png" alt="bread" class="cat-img">
+                    <span class="cat-label">bread.png</span>
+                </div>
+                <div class="cat-img-container">
+                    <img src="cats/meow.gif" alt="mlem" class="cat-img">
+                    <span class="cat-label">meow.gif</span>
+                </div>
+                <div class="cat-img-container">
+                    <img src="cats/stare.png" alt="stare" class="cat-img">
+                    <span class="cat-label">stare.png</span>
+                </div>
+                <div class="cat-img-container">
+                    <img src="cats/snifffff.png" alt="snifffff" class="cat-img">
+                    <span class="cat-label">snifffff.png</span>
+                </div>
+                <div class="cat-img-container">
+                    <img src="cats/mad.png" alt="mad" class="cat-img">
+                    <span class="cat-label">mad.png</span>
+                </div>
+                <div class="cat-img-container">
+                    <img src="cats/judge.png" alt="judge" class="cat-img">
+                    <span class="cat-label">judge.png</span>
+                </div>
+                <div class="cat-img-container">
+                    <img src="cats/high.png" alt="high" class="cat-img">
+                    <span class="cat-label">high.png</span>
+                </div>
+                <div class="cat-img-container">
+                    <img src="cats/hellyea.png" alt="hellyea" class="cat-img">
+                    <span class="cat-label">hellyea.png</span>
+                </div>
+                <div class="cat-img-container">
+                    <img src="cats/hihihi.png" alt="hihihi" class="cat-img">
+                    <span class="cat-label">hihihi.png</span>
+                </div>
+                <div class="cat-img-container">
+                    <img src="cats/mommy.png" alt="mommy" class="cat-img">
+                    <span class="cat-label">mommy.png</span>
+                </div>
+                <div class="cat-img-container">
+                    <img src="cats/mrfresh.png" alt="mrfresh" class="cat-img">
+                    <span class="cat-label">mrfresh.png</span>
+                </div>
+                <div class="cat-img-container">
+                    <img src="cats/hold.png" alt="hold" class="cat-img">
+                    <span class="cat-label">hold.png</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-title">SEE ALSO</div>
+        <div class="section">
+            <p><a href="projects.html">projects(1)</a>, <a href="https://github.com/plastic-bottleneck/ccat">ccat(1)</a></p>
+        </div>
+        
+        <div class="footer">
+            <span class="cursor"></span>
+        </div>
+    </div>
+</body>
+</html>
