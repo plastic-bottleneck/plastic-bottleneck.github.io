@@ -469,7 +469,7 @@ th {
     text-align: left;
     font-family: monospace;
     line-height: normal;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 /* Force left alignment for ALL elements inside VM - override everything */
@@ -632,8 +632,8 @@ th {
     }
     
     .man-header {
-        flex-direction: column;
-        gap: 0.3rem;
+        /*flex-direction: column;
+        gap: 0.3rem;*/
         font-size: 0.85rem;
     }
     
